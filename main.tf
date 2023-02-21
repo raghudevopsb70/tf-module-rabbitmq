@@ -54,7 +54,7 @@ resource "aws_mq_broker" "rabbitmq" {
 
   user {
     username = data.aws_ssm_parameter.USER.value
-    password = data.aws_ssm_parameter.PASS
+    password = data.aws_ssm_parameter.PASS.value
   }
 
 }
